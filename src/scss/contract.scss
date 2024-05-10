@@ -1,0 +1,31 @@
+// contract
+.contract {
+   padding: 160px 0 40px;
+
+   @media (max-width: $tablet) {
+      padding: 140px 0 40px;
+   }
+
+   @media (max-width: $mobileSmall) {
+      padding: 100px 0 20px;
+   }
+
+   &__wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+
+   &__title {
+      text-align: center;
+   }
+
+   &__content {
+      border: solid 1px $mainColor;
+   }
+
+   &__img {
+      width: 100%;
+      object-fit: cover;
+   }
+}

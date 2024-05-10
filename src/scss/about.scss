@@ -1,0 +1,54 @@
+// about
+.about {
+   padding-bottom: 0;
+
+   &__img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+   }
+
+   &__garage {
+      background-color: $footerBgColor;
+      padding-top: 50px;
+      padding-bottom: 110px;
+
+      @media (max-width: 1500px) {
+         padding-top: calc(30px + 20*((100vw - 320px) / (1500 - 320)));
+         padding-bottom: calc(50px + 60*((100vw - 320px) / (1500 - 320)));
+      }
+   }
+
+
+   .garage-list {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 30px;
+
+      @media (max-width:$mobileSmall) {
+         gap: 20px;
+      }
+
+      &__item {
+         width: 300px;
+         aspect-ratio: 300/400;
+         overflow: hidden;
+      }
+
+		&__item.img-width-584 {
+			width: 584px;
+         aspect-ratio: 584/400;
+		}
+
+		@media (max-width:$mobileSmall) {
+         &__item, &__item.img-width-584 {
+				max-width: 100%;
+			}
+      }
+   }
+}
+
+p.text-right {
+   align-self: flex-end;
+}
