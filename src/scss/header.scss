@@ -29,11 +29,7 @@
 
       @media (max-width: $mobile) {
          width: calc(210px + 30*((100vw - 768px) / (1260 - 768)));
-      }
-
-      @media (max-width: $mobileSmall) {
-         display: none;
-      }
+      } 
    }
 
    &__logo img {
@@ -78,7 +74,7 @@
 
          @media (max-width: $mobileSmall) {
             width: 100%;
-            justify-content: space-between;
+            justify-content:flex-end;
          }
 
       }
