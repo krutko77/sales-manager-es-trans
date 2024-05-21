@@ -288,7 +288,7 @@ button:not(.swiper-button-prev, .swiper-button-next, .menu__icon),
    margin: 0 toEm(20, 20) toEm(10, 20) 0;
 
    @media (max-width:$mobileSmall) {
-      margin: toEm(15, 20) 0;
+      margin: 0 0 toEm(15, 20);
    }
 }
 
@@ -297,7 +297,7 @@ button:not(.swiper-button-prev, .swiper-button-next, .menu__icon),
    margin: 0 0 toEm(10, 20) toEm(20, 20);
 
    @media (max-width:$mobileSmall) {
-      margin: toEm(15, 20) 0;
+      margin: 0 0 toEm(15, 20);
    }
 }
 
