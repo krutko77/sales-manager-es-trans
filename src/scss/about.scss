@@ -33,6 +33,17 @@
 		.card {
 			@media (max-width: $pc) {
 				max-width: 600px;
+				min-height: 350px;
+			}
+
+			&__img-wrapper {
+				width: 64px;
+				height: 64px;
+			}
+
+			&__icons {
+				width: 100%;
+				height: auto;
 			}
 		}
 	}

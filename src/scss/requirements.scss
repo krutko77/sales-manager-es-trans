@@ -1,0 +1,21 @@
+// requirements
+.requirements {
+	&__list {
+      padding-left: toRem(19);
+   }
+
+   &__list li {
+      list-style-type: square;
+      margin-bottom: toEm(10, 20);
+   }
+
+   &__list li::marker {
+      color: $accentColor;
+   }
+
+   &__img-box {
+      max-width: 400px;
+      aspect-ratio: 400/312;
+      overflow: hidden;
+   }
+}

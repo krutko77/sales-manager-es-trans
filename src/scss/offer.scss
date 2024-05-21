@@ -8,13 +8,6 @@
       align-items: center;
    }
 
-   &__title {
-
-      &::after {
-         left: 1%;
-      }
-   }
-
    &__list {
       padding-left: toRem(19);
    }
@@ -36,7 +29,7 @@
 
    &__img-box-2 {
       max-width: 400px;
-      aspect-ratio: 400/300;
+      aspect-ratio: 400/274;
       overflow: hidden;
    }
 
