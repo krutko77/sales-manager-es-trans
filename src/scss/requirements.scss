@@ -1,6 +1,6 @@
 // requirements
 .requirements {
-	&__list {
+   &__list {
       padding-left: toRem(19);
    }
 
@@ -13,9 +13,22 @@
       color: $accentColor;
    }
 
-   &__img-box {
+   &__img-box,
+   &__img-box-1,
+   &__img-box-2 {
       max-width: 400px;
-      aspect-ratio: 400/312;
       overflow: hidden;
+   }
+
+   &__img-box {
+      aspect-ratio: 400/312;
+   }
+
+   &__img-box-1 {
+      aspect-ratio: 400/284;
+   }
+
+   &__img-box-2 {
+      aspect-ratio: 400/295;
    }
 }

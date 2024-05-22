@@ -127,6 +127,7 @@
 		&__item.img-width-584 {
 			width: 584px;
          aspect-ratio: 584/400;
+			overflow: hidden;
 		}
 
 		@media (max-width:$mobileSmall) {

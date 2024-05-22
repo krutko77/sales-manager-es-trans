@@ -2,9 +2,7 @@
 .home {
    height: 100vh;
    padding: 90px 0 20px;
-   background-image: url('./../img/bg-home-3-40-1.jpg');
-   background-size: cover;
-   background-position: bottom right;
+   background: url('./../img/bg-home-over-1000.png') bottom left 8%/850px no-repeat, url('./../img/bg-home-3-40.jpg') bottom center/cover no-repeat;
    color: $mainBgColor;
 
    text-transform: uppercase;
@@ -14,15 +12,18 @@
    align-items: center;
 
    @media (max-width:$tablet) {
-      padding: 120px 0 70px;
-      background-image: url('./../img/bg-home-tablet-40.jpg');
-      background-position: bottom left;
+      padding: 160px 0 70px;
+      background: url('./../img/bg-home-over-1000.png') bottom left 8%/700px no-repeat, url('./../img/bg-home-992-40.jpg') bottom center/cover no-repeat;
    }
 
-   @media (max-width:$mobileSmall) {
-      padding: 90px 0 80px;
-      background-image: url('./../img/bg-home-small-40.jpg');
-      background-position: bottom left;
+   @media (max-width:$mobile) {
+      padding: 160px 0 70px;
+      background: url('./../img/bg-home-over-1000.png') bottom left/98% no-repeat, url('./../img/bg-home-992-40.jpg') bottom center/cover no-repeat;
+   }
+
+	@media (max-width:$mobileSmall) {
+      padding: 170px 0 70px;      
+		background: url('./../img/bg-home-over-1000.png') bottom left/98% no-repeat, url('./../img/bg-home-480-40.jpg') bottom center/cover no-repeat;
    }
 
    @media (max-width: 1024px) and (min-aspect-ratio: 1024/600) {
@@ -79,11 +80,11 @@
       text-shadow: 0 0 5px $mainColor;
 
       @media (max-width: 1500px) {
-         font-size: toRem(70);
+         font-size: toRem(60);
       }
 
       @media (max-width:$pc) {
-         font-size: calc(toRem(40) + 30*((100vw - 320px) / (1200 - 320)));
+         font-size: calc(toRem(30) + 30*((100vw - 320px) / (1200 - 320)));
       }
    }
 
@@ -104,11 +105,12 @@
       text-shadow: 0 0 5px $mainColor;
 
       @media (max-width: 1500px) {
+         font-size: toRem(35);
          margin-bottom: toEm(30, 40);
       }
 
       @media (max-width:$pc) {
-         font-size: calc(toRem(23) + 17*((100vw - 320px) / (1200 - 320)));
+         font-size: calc(toRem(23) + 12*((100vw - 320px) / (1200 - 320)));
       }
 
       @media (max-width:$tablet) {
