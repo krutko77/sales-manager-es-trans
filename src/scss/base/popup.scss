@@ -76,13 +76,13 @@ body::after {
 .popup__close {
    align-self: flex-end;
    color: $accentColor;
-   transition: color 0.3s ease;
+   transition: color 0.3s ease;   
+}
 
-   @media (any-hover: hover) {
-      .popup__close:hover {
-         color: $secondLinkColor;
-      }
-   }
+@media (any-hover: hover) {
+	.popup__close:hover {
+		color: $secondLinkColor;
+	}
 }
 
 .popup__img-wrapper {

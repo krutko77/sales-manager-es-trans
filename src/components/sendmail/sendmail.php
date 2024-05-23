@@ -23,21 +23,29 @@ $mail->Port       = 465;
 
 
 //От кого письмо
-$mail->setFrom('drivers-lending77@es-trans.ru', 'Лендинг по поиску водителей'); // Указать нужный E-mail
+$mail->setFrom('drivers-lending77@es-trans.ru', 'Лендинг по поиску менеджера по продажам'); // Указать нужный E-mail
 //Кому отправить
-$mail->addAddress('avs@es-trans.pro'); // Указать нужный E-mail 
+$mail->addAddress('kpv@es-trans.pro'); // Указать нужный E-mail 
 //Тема письма
-$mail->Subject = 'Привет! Это запрос с лендинга по поиску водителей.';
+$mail->Subject = 'Привет! Это запрос с лендинга по поиску менеджера по продажам.';
 
 //Тело письма
-$body = '<h1>Меня интересует работа водителем категории Е в ООО "ЕС Транс"</h1>';
+$body = '<h1>Меня интересует работа менеджером по продажам в ООО "ЕС Транс"</h1>';
 
-if (trim(!empty($_POST['name']))) {
-	$body .= '<p><strong>Имя:</strong> ' . $_POST['name'] . '</p>';
+if (trim(!empty($_POST['first-name']))) {
+	$body .= '<p><strong>Имя:</strong> ' . $_POST['first-name'] . '</p>';
+}
+
+if (trim(!empty($_POST['last-name']))) {
+	$body .= '<p><strong>Фамилия:</strong> ' . $_POST['last-name'] . '</p>';
 }
 
 if (trim(!empty($_POST['tel']))) {
 	$body .= '<p><strong>Телефон или мессенджер:</strong> ' . $_POST['tel'] . '</p>';
+}
+
+if (trim(!empty($_POST['message']))) {
+	$body .= '<p><strong>Почему вы хотите у нас работать:</strong> ' . $_POST['message'] . '</p>';
 }
 
 // Проверка на бота
