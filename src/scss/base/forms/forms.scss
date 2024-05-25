@@ -57,12 +57,12 @@
    }
 
    textarea.form__input {
-      min-height: 150px;
+      min-height: 70px;
       resize: vertical;
       padding: 10px 20px;
 
       @media (max-width: $pc) {
-         min-height: calc(140px + 60 * (100vw - 320px) / 940);
+         min-height: calc(60px + 10 * (100vw - 320px) / 940);
       }
    }
 
