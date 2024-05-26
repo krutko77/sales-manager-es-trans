@@ -11,6 +11,10 @@
    justify-content: center;
    align-items: center;
 
+	@media (max-width: 1500px) {
+		background: url('./../img/bg-home-over-1000.png') bottom left 8%/800px no-repeat, url('./../img/bg-home-992-40.jpg') bottom center/cover no-repeat;
+	}
+
    @media (max-width:$tablet) {
       padding: 160px 0 70px;
       background: url('./../img/bg-home-over-1000.png') bottom left 8%/700px no-repeat, url('./../img/bg-home-992-40.jpg') bottom center/cover no-repeat;
@@ -27,8 +31,9 @@
    }
 
    @media (max-width: 1024px) and (min-aspect-ratio: 1024/600) {
-      height: 1000px;
-      background-position: 50% 50%;
+      height: 900px;
+      padding: 160px 0 70px;
+      background: url('./../img/bg-home-over-1000.png') bottom left 8%/700px no-repeat, url('./../img/bg-home-992-40.jpg') bottom center/cover no-repeat;
    }
 
    &__container-home {
@@ -80,11 +85,11 @@
       text-shadow: 0 0 5px $mainColor;
 
       @media (max-width: 1500px) {
-         font-size: toRem(60);
+         font-size: toRem(55);
       }
 
       @media (max-width:$pc) {
-         font-size: calc(toRem(30) + 30*((100vw - 320px) / (1200 - 320)));
+         font-size: calc(toRem(30) + 25*((100vw - 320px) / (1200 - 320)));
       }
    }
 
@@ -106,12 +111,12 @@
       text-shadow: 0 0 5px $mainColor;
 
       @media (max-width: 1500px) {
-         font-size: toRem(35);
+         font-size: toRem(32);
          margin-bottom: toEm(30, 40);
       }
 
       @media (max-width:$pc) {
-         font-size: calc(toRem(23) + 12*((100vw - 320px) / (1200 - 320)));
+         font-size: calc(toRem(23) + 9*((100vw - 320px) / (1200 - 320)));
       }
 
       @media (max-width:$tablet) {
@@ -183,8 +188,12 @@
          line-height: 1.2;
          text-shadow: 0 0 15px $mainColor;
 
+			@media (max-width: 1500px) {
+				font-size: toRem(22);
+			}
+
          @media (max-width:$pc) {
-            font-size: calc(toRem(17) + 8*((100vw - 320px) / (1200 - 320)));
+            font-size: calc(toRem(17) + 5*((100vw - 320px) / (1200 - 320)));
          }
       }
    }

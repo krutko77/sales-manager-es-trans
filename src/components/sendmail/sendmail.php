@@ -44,8 +44,12 @@ if (trim(!empty($_POST['tel']))) {
 	$body .= '<p><strong>Телефон или мессенджер:</strong> ' . $_POST['tel'] . '</p>';
 }
 
-if (trim(!empty($_POST['message']))) {
-	$body .= '<p><strong>Почему вы хотите у нас работать:</strong> ' . $_POST['message'] . '</p>';
+if (trim(!empty($_POST['email']))) {
+	$body .= '<p><strong>E-mail:</strong> ' . $_POST['email'] . '</p>';
+}
+
+if (trim(!empty($_POST['text-message']))) {
+	$body .= '<p><strong>Почему вы хотите у нас работать:</strong> ' . $_POST['text-message'] . '</p>';
 }
 
 // Проверка на бота
