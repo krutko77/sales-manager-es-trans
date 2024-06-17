@@ -11,9 +11,9 @@
    justify-content: center;
    align-items: center;
 
-	@media (max-width: 1500px) {
-		background: url('./../img/bg-home-over-1000.png') bottom left 8%/800px no-repeat, url('./../img/bg-home-992-40.jpg') bottom center/cover no-repeat;
-	}
+   @media (max-width: 1500px) {
+      background: url('./../img/bg-home-over-1000.png') bottom left 8%/800px no-repeat, url('./../img/bg-home-992-40.jpg') bottom center/cover no-repeat;
+   }
 
    @media (max-width:$tablet) {
       padding: 160px 0 70px;
@@ -25,9 +25,10 @@
       background: url('./../img/bg-home-over-1000.png') bottom left/98% no-repeat, url('./../img/bg-home-992-40.jpg') bottom center/cover no-repeat;
    }
 
-	@media (max-width:$mobileSmall) {
-      padding: 120px 0 30px;      
-		background: url('./../img/bg-home-over-1000.png') bottom left/98% no-repeat, url('./../img/bg-home-480-2-40.jpg') bottom center/cover no-repeat;
+   @media (max-width:$mobileSmall) {
+      height: 95vh;
+      padding: 80px 0 30px;
+      background: url('./../img/bg-home-over-1000.png') bottom left/98% no-repeat, url('./../img/bg-home-480-2-40.jpg') bottom center/cover no-repeat;
    }
 
    @media (max-width: 1024px) and (min-aspect-ratio: 1024/600) {
@@ -106,7 +107,7 @@
       line-height: math.div(60, 50);
       margin-bottom: toEm(40, 40);
       opacity: 0;
-		line-height: 0.9;
+      line-height: 0.9;
       transform: translateY(50px);
       text-shadow: 0 0 5px $mainColor;
 
@@ -123,8 +124,12 @@
          margin-bottom: 40px;
       }
 
-     @media (max-width:$mobile) {
+      @media (max-width:$mobile) {
          margin-bottom: 30px;
+      }
+
+		@media (max-width:$mobileSmall) {
+         margin-bottom: 15px;
       }
    }
 
@@ -164,7 +169,7 @@
    &__action {
       text-align: center;
       font-weight: 500;
-   }	
+   }
 }
 
 .list-home {
@@ -188,9 +193,9 @@
          line-height: 1.2;
          text-shadow: 0 0 15px $mainColor;
 
-			@media (max-width: 1500px) {
-				font-size: toRem(22);
-			}
+         @media (max-width: 1500px) {
+            font-size: toRem(22);
+         }
 
          @media (max-width:$pc) {
             font-size: calc(toRem(17) + 5*((100vw - 320px) / (1200 - 320)));
