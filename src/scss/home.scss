@@ -78,12 +78,15 @@
    }
 
    &__title {
-      font-size: toRem(80);
-      line-height: 1.1;
       text-align: left;
       opacity: 0;
       transform: translateY(50px);
-      text-shadow: 0 0 5px $mainColor;
+      text-shadow: 0 0 5px $mainColor;		
+   }
+
+   &__title-big {
+      font-size: toRem(80);
+      line-height: 1.1;
 
       @media (max-width: 1500px) {
          font-size: toRem(55);
@@ -94,6 +97,32 @@
       }
    }
 
+   &__title-small {
+      font-size: toRem(40);
+      font-weight: 900;
+
+		@media (max-width: 1500px) {
+			font-size: toRem(32);
+			margin-bottom: toEm(30, 40);
+		}
+	
+		@media (max-width:$pc) {
+			font-size: calc(toRem(23) + 9*((100vw - 320px) / (1200 - 320)));
+		}
+	
+		@media (max-width:$tablet) {
+			margin-bottom: 40px;
+		}
+	
+		@media (max-width:$mobile) {
+			margin-bottom: 30px;
+		}
+	
+		@media (max-width:$mobileSmall) {
+			margin-bottom: 15px;
+		}
+   }
+
    &__title._watcher-view {
       opacity: 1;
       transform: translateY(0);
@@ -101,36 +130,15 @@
       /* text-align: center; */
    }
 
+   
+
+
    &__label {
-      font-size: toRem(40);
-      font-weight: 900;
-      line-height: math.div(60, 50);
-      margin-bottom: toEm(40, 40);
       opacity: 0;
-      line-height: 0.9;
+      line-height: math.div(60, 50);
       transform: translateY(50px);
       text-shadow: 0 0 5px $mainColor;
-
-      @media (max-width: 1500px) {
-         font-size: toRem(32);
-         margin-bottom: toEm(30, 40);
-      }
-
-      @media (max-width:$pc) {
-         font-size: calc(toRem(23) + 9*((100vw - 320px) / (1200 - 320)));
-      }
-
-      @media (max-width:$tablet) {
-         margin-bottom: 40px;
-      }
-
-      @media (max-width:$mobile) {
-         margin-bottom: 30px;
-      }
-
-		@media (max-width:$mobileSmall) {
-         margin-bottom: 15px;
-      }
+      margin-bottom: toEm(40, 40);
    }
 
    &__label._watcher-view {
