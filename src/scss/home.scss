@@ -81,7 +81,7 @@
       text-align: left;
       opacity: 0;
       transform: translateY(50px);
-      text-shadow: 0 0 5px $mainColor;		
+      text-shadow: 0 0 5px $mainColor;
    }
 
    &__title-big {
@@ -93,7 +93,7 @@
       }
 
       @media (max-width:$pc) {
-         font-size: calc(toRem(30) + 25*((100vw - 320px) / (1200 - 320)));
+         font-size: calc(toRem(40) + 15*((100vw - 320px) / (1200 - 320)));
       }
    }
 
@@ -101,44 +101,40 @@
       font-size: toRem(40);
       font-weight: 900;
 
-		@media (max-width: 1500px) {
-			font-size: toRem(32);
-			margin-bottom: toEm(30, 40);
-		}
-	
-		@media (max-width:$pc) {
-			font-size: calc(toRem(23) + 9*((100vw - 320px) / (1200 - 320)));
-		}
-	
-		@media (max-width:$tablet) {
-			margin-bottom: 40px;
-		}
-	
-		@media (max-width:$mobile) {
-			margin-bottom: 30px;
-		}
-	
-		@media (max-width:$mobileSmall) {
-			margin-bottom: 15px;
-		}
+      @media (max-width: 1500px) {
+         font-size: toRem(32);
+         margin-bottom: toEm(30, 40);
+      }
+
+      @media (max-width:$pc) {
+         font-size: calc(toRem(23) + 9*((100vw - 320px) / (1200 - 320)));
+      }
+
+      @media (max-width:$tablet) {
+         margin-bottom: 40px;
+      }
+
+      @media (max-width:$mobile) {
+         margin-bottom: 30px;
+      }
+
+      @media (max-width:$mobileSmall) {
+         margin-bottom: 15px;
+      }
    }
 
    &__title._watcher-view {
       opacity: 1;
       transform: translateY(0);
       transition: transform 1.3s ease 0s, opacity 1.3s ease 0s;
-      /* text-align: center; */
    }
-
-   
-
 
    &__label {
       opacity: 0;
       line-height: math.div(60, 50);
       transform: translateY(50px);
       text-shadow: 0 0 5px $mainColor;
-      margin-bottom: toEm(40, 40);
+      margin-bottom: toEm(80, 40);
    }
 
    &__label._watcher-view {
